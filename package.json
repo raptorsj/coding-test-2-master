@@ -4,8 +4,8 @@
   "description": "Skeleton project for nodejs based coding interviews",
   "main": "app.js",
   "scripts": {
-    "start": "node bin/start.js",
-    "tests": "mocha test/**/*.test.js"
+    "start": "node ./bin/www",
+    "tests": "mocha test/*.test.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,8 @@
   "dependencies": {
     "@hapi/joi": "^17.1.1",
     "express": "^4.17.1",
-    "mongoose": "^5.9.14"
+    "express-generator": "^4.16.1",
+    "mongoose": "^5.9.14",
+    "sinon": "^9.2.1"
   }
 }

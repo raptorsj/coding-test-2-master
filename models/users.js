@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const dbConn = require('./connection');
 
 const UserSchema = new mongoose.Schema ({
   firstName: mongoose.Schema.Types.String,
@@ -7,4 +8,4 @@ const UserSchema = new mongoose.Schema ({
   profession: mongoose.Schema.Types.String,
 });
 
-module.exports = mongoose.model('Users', UserSchema);
+module.exports = dbConn.model('Users', UserSchema);
